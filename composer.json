@@ -6,13 +6,13 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
+        "aimeos/ai-payments": "^2024.07",
         "aimeos/aimeos-laravel": "^2024.07",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
         "laravel/tinker": "^2.8",
-        "livewire/livewire": "^3.4",
-        "aimeos-themes/bitsnio": "*"
+        "livewire/livewire": "^3.4"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -67,13 +67,6 @@
             "php-http/discovery": true
         }
     },
-    "repositories": [{
-        "type": "composer",
-        "url": "https://packages.aimeos.org/aimeoscom"
-    }, {
-        "type": "path",
-        "url": "packages/*"
-    }],
 
     "minimum-stability": "dev",
     "prefer-stable": true
