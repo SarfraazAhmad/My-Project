@@ -4,8 +4,51 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d1d0fcf242347bb0f003bcb5c492c8d3",
+    "content-hash": "f41accaea6d172a5028c44d5cbc26cf8",
     "packages": [
+        {
+            "name": "aimeos-extensions/bitsnio",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/bitsnio",
+                "reference": "a26b1f0e9fd3d0d4d7b984edf06099666f8e7c42"
+            },
+            "require": {
+                "php": "^8.0.11"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~10.0||~11.0"
+            },
+            "type": "aimeos-extension",
+            "autoload": {
+                "psr-4": {
+                    "Aimeos\\": "src"
+                },
+                "classmap": [
+                    "src"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Aimeos\\": "tests"
+                },
+                "classmap": [
+                    "tests"
+                ]
+            },
+            "license": [
+                "LGPL-3.0"
+            ],
+            "description": "Aimeos bitsnio extension",
+            "keywords": [
+                "aimeos",
+                "extension"
+            ],
+            "transport-options": {
+                "relative": true
+            }
+        },
         {
             "name": "aimeos/ai-admin-graphql",
             "version": "2024.07.1",
@@ -158,6 +201,55 @@
                 "wiki": "https://aimeos.org/docs"
             },
             "time": "2024-07-02T07:50:28+00:00"
+        },
+        {
+            "name": "aimeos/ai-catsuggest",
+            "version": "2024.07.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/aimeos/ai-catsuggest.git",
+                "reference": "64682052626f92250c54f8971f349a08532c09b3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/aimeos/ai-catsuggest/zipball/64682052626f92250c54f8971f349a08532c09b3",
+                "reference": "64682052626f92250c54f8971f349a08532c09b3",
+                "shasum": ""
+            },
+            "require": {
+                "aimeos/ai-controller-frontend": "2024.07.*",
+                "aimeos/aimeos-core": "2024.07.*",
+                "php": "^8.0.11"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~10.0||~11.0"
+            },
+            "type": "aimeos-extension",
+            "autoload": {
+                "psr-4": {
+                    "Aimeos\\": "src"
+                },
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0-or-later"
+            ],
+            "description": "Aimeos category suggestion in catalog/suggest HTML client",
+            "homepage": "https://aimeos.org",
+            "keywords": [
+                "aimeos",
+                "extension"
+            ],
+            "support": {
+                "forum": "https://aimeos.org/help",
+                "issues": "https://github.com/aimeos/ai-catsuggest/issues",
+                "source": "https://github.com/aimeos/ai-catsuggest",
+                "wiki": "https://aimeos.org/docs"
+            },
+            "time": "2024-07-02T07:50:29+00:00"
         },
         {
             "name": "aimeos/ai-client-html",
@@ -1837,6 +1929,66 @@
                 "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.19.0"
             },
             "time": "2024-06-18T10:27:15+00:00"
+        },
+        {
+            "name": "facebook/graph-sdk",
+            "version": "5.1.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/facebook/php-graph-sdk.git",
+                "reference": "38fd7187a6704d3ab14ded2f3a534ac4ee6f3481"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/facebook/php-graph-sdk/zipball/38fd7187a6704d3ab14ded2f3a534ac4ee6f3481",
+                "reference": "38fd7187a6704d3ab14ded2f3a534ac4ee6f3481",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "guzzlehttp/guzzle": "~5.0",
+                "mockery/mockery": "~0.8",
+                "phpunit/phpunit": "~4.0"
+            },
+            "suggest": {
+                "guzzlehttp/guzzle": "Allows for implementation of the Guzzle HTTP client"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Facebook\\": "src/Facebook/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Facebook Platform"
+            ],
+            "authors": [
+                {
+                    "name": "Facebook",
+                    "homepage": "https://github.com/facebook/facebook-php-sdk-v4/contributors"
+                }
+            ],
+            "description": "Facebook SDK for PHP",
+            "homepage": "https://github.com/facebook/facebook-php-sdk-v4",
+            "keywords": [
+                "facebook",
+                "sdk"
+            ],
+            "support": {
+                "issues": "https://github.com/facebook/php-graph-sdk/issues",
+                "source": "https://github.com/facebook/php-graph-sdk/tree/5.1.4"
+            },
+            "abandoned": true,
+            "time": "2016-05-13T17:28:30+00:00"
         },
         {
             "name": "fruitcake/php-cors",

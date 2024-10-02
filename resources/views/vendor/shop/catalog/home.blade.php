@@ -1,5 +1,5 @@
 @extends('shop::base')
-
+{{-- {{dd(12);}} --}}
 @section('aimeos_header')
 	<?= $aiheader['locale/select'] ?? '' ?>
 	<?= $aiheader['basket/mini'] ?? '' ?>
@@ -7,6 +7,7 @@
 	<?= $aiheader['catalog/tree'] ?? '' ?>
 	<?= $aiheader['catalog/home'] ?? '' ?>
 	<?= $aiheader['cms/page'] ?? '' ?>
+
 	<style>
 		/* Popup container */
 .popup {
@@ -68,7 +69,7 @@
 
 @section('aimeos_body')
 <!-- Popup Form -->
-<div id="shopPopup" class="popup" style="display: none;">
+{{-- <div id="shopPopup" class="popup" style="display: none;">
     <div class="popup-content">
         <span class="close-btn" onclick="closePopup()">&times;</span>
         <h2>Select Shop</h2>
@@ -83,7 +84,7 @@
             <button type="submit">Select</button>
         </form>
     </div>
-</div>
+</div> --}}
 	<?= $aibody['catalog/home'] ?? '' ?>
 	<?= $aibody['cms/page'] ?? '' ?>
 @stop

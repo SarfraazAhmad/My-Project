@@ -4,6 +4,7 @@ use Aimeos\Shop\Facades\Shop;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -45,3 +46,8 @@ Route::group(['prefix' => '{site}'], function () {
     Route::get('shop', [\Aimeos\Shop\Controller\CatalogController::class, 'homeAction'])->name('aimeos_shop_index');
 });
 require __DIR__.'/auth.php';
+
+Route::get('mypage', [
+    'as' => 'mypage',
+    'uses' => 'App\Http\Controllers\ExampleController@indexAction'
+]);

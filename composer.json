@@ -6,8 +6,11 @@
     "license": "MIT",
     "require": {
         "php": "^8.1",
+        "aimeos-extensions/bitsnio": "dev-main",
+        "aimeos/ai-catsuggest": "^2024.07",
         "aimeos/ai-payments": "^2024.07",
         "aimeos/aimeos-laravel": "^2024.07",
+        "facebook/graph-sdk": "^5.1",
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^10.10",
         "laravel/sanctum": "^3.3",
@@ -67,6 +70,14 @@
             "php-http/discovery": true
         }
     },
+    "repositories": [{
+        "type": "composer",
+        "url": "https://packages.aimeos.org/aimeoscom"
+    }, {
+        "type": "path",
+        "url": "packages/*"
+    }],
+
 
     "minimum-stability": "dev",
     "prefer-stable": true
